@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <title>직업 추천</title>
+        <meta charset="UTF-8">
+        <style type="text/css">
+        #topMenu { height: 50px; width: 850px; } 
+            #topMenu ul li { list-style: none; color: white;  background-color: #2d2d2d;  
+              line-height: 50px;  vertical-align: middle;  text-align: center; display:inline-block;
+            }
+                 #topMenu .menuLink { 
+                     text-decoration:none; color: white; 
+                     display: block;  width: 125px;  font-size: 15px; 
+                     font-weight: bold; font-family: "Trebuchet MS", Dotum, Arial; }
+                      #topMenu .menuLink:hover {  
+                          color: red;  background-color: c;}
+        body{ background-image: url('diachar.jpg'); background-attachment:fixed;
+                background-size: cover; background-repeat: no-repeat;}
+                
+        body, div, ul, li{margin:0; padding:0}
+            ul{list-style: none}
+            a{color:#000; text-decoration: none}
+            
+            .gnb{
+                width:800px; height: 100px; margin:auto; margin-top:70px;
+            }
+            .gnb>ul>li{
+               float:left; width: 100px; height: 50px; margin-right:5px;
+               position: relative;;     
+            }
+            .gnb>ul>li>a{
+                display: block; width:95px; height: 100%;
+                font:bold 13px/30px;
+                text-align: center; color:white; background:rgb(170, 102, 102);
+            }
+            .gnb ul ul{display: none}
+
+            .gnb>ul>li:hover ul{
+                display: block; width: 100px; height:25;
+                position: absolute; left: 0; top:30px;
+            }
+            .gnb li li{width: 100px;height: 25px;background-color: gray; text-align: center;}
+            .gnb li li a{
+                display: block; width: 100%; height: 100%;
+                font: bold 12px/25px;
+            }
+            .gnb li li a:hover{
+                color: white; background:none;
+            }
+
+        .a {
+                           float : right;
+                           width : 20%;
+                           color :white;
+                           font-family: 궁서;
+
+                       }
+        .a1{
+            float:left;
+        }
+        .chang10{
+            border : 3px solid black;
+                        width : 50%;
+                        height : 70%;
+                        background-color: rgba(255, 255, 255, 0.61);
+        }
+    </style>
+            
+            <center><div>
+                    <ul id="topMenu">
+                            <ul>
+                                <li><a class="menuLink" href="main.html">홈으로</a></li>
+                                <li><a class="menuLink" href="report.html">가이드</a></li>
+                               <li><a class="menuLink" href="class.html">직업 추천</a></li>
+                               <li><a class="menuLink" href="story.html">스토리</a></li>
+                            </ul>
+                    </ul></div>
+            </head>
+    <body>
+            <form>
+                    <fieldset class="a">
+                            
+                        <legend></legend>
+                        <ul>
+                    <p>아이디 : <input type="text" name="id"></p>
+                    <p>비밀번호 : <input type="password" name="password"></p>
+                    <p><button type="button">LOGIN</button></p>
+                        </ul>
+                    
+                    </fieldset>
+                
+                    </form>
+                    <div class="chang10">
+                            <h2>좋은 순위</h2><center>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;부두술사:<progress value="2" max="100" title="진행률">2%</progress><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;강령술사:<progress value="89" max="100" title="진행률">89%</progress><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;마법사:<progress value="60" max="100" title="진행률">60%</progress><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;성전사:<progress value="30" max="100" title="진행률">30%</progress><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;야만용사:<progress value="25" max="100" title="진행률">25%</progress><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;수도사:<progress value="42" max="100" title="진행률">42%</progress><br>
+                            악마사냥꾼:<progress value="22" max="100" title="진행률">22%</progress><br>
+                            </center>
+                    </div>
+    </body>
+</html>    
